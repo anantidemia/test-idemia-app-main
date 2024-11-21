@@ -6,16 +6,32 @@
     "license": "MIT",
     "repository": "https://github.com/Akhilleus20/test-idemia-app",
     "scripts": {
-        "build": "stac ."
+        "dev": "nodemon --exec ts-node src/index.ts",
+        "build": "tsc",
+        "start": "node dist/index.js"
     },
     "devDependencies": {
         "@klave/sdk": "0.13.0",
+        "@types/express": "^5.0.0",
+        "@types/node": "^22.9.1",
+        "@types/swagger-jsdoc": "^6.0.4",
+        "@types/swagger-ui-express": "^4.1.7",
         "as-base64": "0.2.0",
-        "assemblyscript": "^0.27.26",
+        "assemblyscript": "^0.27.31",
+        "nodemon": "^3.1.7",
         "path-complete-extname": "1.0.0",
         "stac": "^2.0.0",
+        "ts-node": "^10.9.2",
         "tslib": "^2.6.2",
+        "typescript": "^5.6.3",
         "visitor-as": "^0.11.4",
         "zod": "^3.22.4"
-    }
+    },
+    "dependencies": {
+        "@secretarium/connector": "^0.17.0",
+        "express": "^4.21.1",
+        "swagger-jsdoc": "^6.2.8",
+        "swagger-ui-express": "^5.0.1"
+    },
+    "main": "index.js"
 }

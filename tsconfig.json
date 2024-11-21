@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    /* Projects */
+    // Enable incremental compilation for faster builds.
+    "incremental": true,
+
+    /* Language and Environment */
+    "target": "es2016",  // Specify ECMAScript target version.
+    "module": "commonjs",  // Specify module code generation.
+    "rootDir": "./",  // Specify the root folder of the source files.
+    "outDir": "dist",  // Specify an output folder for all emitted files.
+    "esModuleInterop": true,  // Allow default imports from modules with default exports.
+    "allowJs": true,  // Allow JavaScript files to be part of your project.
+    "forceConsistentCasingInFileNames": true,  // Ensure imports have consistent casing.
+    "skipLibCheck": true,  // Skip type checking all declaration files.
+    "resolveJsonModule": true,  // Enable importing JSON files.
+    "strict": false,  // Disable all strict type-checking options to reduce type errors.
+    "moduleResolution": "node",  // Specify how modules are resolved.
+
+    /* Emit */
+    "sourceMap": true,  // Enable source map generation for debugging.
+    "declaration": true,  // Generate declaration files for TypeScript files.
+    "removeComments": true,  // Remove comments in emitted output.
+
+    /* JavaScript Support */
+    "allowSyntheticDefaultImports": true,  // Allow default imports for CommonJS modules.
+
+    /* Interop Constraints */
+    "isolatedModules": true,  // Ensure each file is safely transpiled without relying on other imports.
+    "experimentalDecorators": true  // Enable experimental support for decorators.
+  },
+  "include": [
+    "src/**/*.ts",
+    "apps/test-idemia-app/**/*.ts",
+    "node_modules/@klave/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules/@klave/sdk/assembly/**/*",
+    "node_modules/@klave/as-json/**/*",
+    "node_modules/as-base64/**/*",
+    "node_modules/as-virtual/**/*"
+  ],
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["app.ts"]
+
+}
+
